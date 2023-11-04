@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="styles.css">
+  <h1 id="title">Survey Form</h1>
+    <p id="description">A short form that is just for fun!<p>
+    
+    <form id="survey-form">
+      <fieldset>
+      <label id="name-label">Name: </label><input id="name" type="text" placeholder="EX: Jane Doe" required></input>
+
+      <label id="email-label">Email: </label><input id="email" type="email" placeholder="EX: hello@gmail.com" required></input>
+
+      <label id="number-label">Age: </label><input id="number" type="number" placeholder="EX: 23" min="0" max="130"></input>
+      </fieldset>
+
+      <fieldset>
+      <label id="dropdown-menu">What is your favorite animal?</label>
+      <select id="dropdown">
+        <option value="empty">Select an option</option>
+        <option value="dogs">Dogs</option>
+        <option value="cats">Cats</option>
+        <option value="fish">Fish</option>
+      </select>
+      </fieldset>
+
+      <fieldset>
+      <legend>Would you reccomend this form?</legend>
+        <label for="yes"><input id="yes" value="yes" type="radio" name="reccomendation" class="inline" checked /> Yes</label>
+        <label for="no"><input id="no" value="no" type="radio" name="reccomendation" class="inline" /> No</label>
+        <label for="maybe"><input id="maybe" value="maybe" type="radio" name="reccomendation" class="inline" /> Maybe</label>
+      </fieldset>
+
+      <fieldset>
+      <legend>Which of the following are plants? (check all that apply)</legend>
+      <label for="apple"><input id="apple" type="checkbox" name="checkbox-select" value="apples" class="inline"/>Apples</label>
+      <label for="cow"><input id="cow" type="checkbox" name="checkbox-select" value="cows" class="inline"/>Cows</label>
+      <label for="ivy"><input id="ivy" type="checkbox" name="checkbox-select" value="devils-ivy" class="inline"/>Devil's Ivy</label>
+      </fieldset>
+
+      <fieldset>
+      <label id="comments">Please leave any additional comments in the text box below.</label>
+      <textarea></textarea>
+      </fieldset>
+
+      <button id="submit" >Submit</button>
+    </form> 
+
